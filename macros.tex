@@ -1,0 +1,59 @@
+\usepackage{amsthm}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{placeins} %for \FloatBarrier
+\usepackage{siunitx}
+\sisetup{mode=math}
+\usepackage{xcolor}
+\usepackage[framemethod=tikz]{mdframed}
+\usetikzlibrary{calc}
+\usepackage{amsmath} %american math society package
+\usepackage{amssymb} %and so is this
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{exsheets}
+\usepackage{commath} %for better looking differentials
+%\usepackage{pgfornament}
+%\usepackage[%papersize={17cm, 24cm},
+%top=2.54cm,
+%bottom=2.54cm
+%, right=1.5cm, left=1.5cm
+%]{geometry}
+\usepackage{booktabs}
+%\doublespacing
+%\setotherlanguage[numerals=maghrib]{arabic}
+\setmainlanguage{english}
+
+%\setmainfont[Ligatures=TeX]{Adobe Arabic}%{Scheherazade}%{Amiri}
+%\setsansfont{mohammad bold art 1}%Al-Kharashi 12}%Scheherazade}
+%\newfontfamily\arabicfont[Script=Arabic,Scale=1]{Adobe Arabic}%{Sakkal Majalla}%{Tr%aditional Arabic}%لاىخ
+%\newfontfamily{\differenttt}{Courier New}
+%\DeclareTextFontCommand{\textdifferenttt}{\differenttt}
+
+%\renewcommand*{\sectionmarkformat}{} \renewcommand*\thesection{*}
+
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{1}
+
+\DeclareSIUnit[number-unit-product = {}]
+\feet{ft}
+
+\let\DeclareUSUnit\DeclareSIUnit
+\let\US\SI
+\DeclareUSUnit\inch{in}
+\DeclareUSUnit\slug{slug}
+\DeclareUSUnit\pound{lb}
+\DeclareUSUnit\psi{psi}
+\DeclareSIUnit{\myunitA}{m/s^2}
+\DeclareSIUnit{\myunitB}{ft/s^2}
+\DeclareSIUnit{\myunitC}{lb.s}
+\DeclareSIUnit{\myunitD}{N.s/m^2}
+\DeclareSIUnit{\myunitE}{lb.s/ft^2}
+\sisetup{quotient-mode=fraction}
+\sisetup{per-mode=fraction}
+
+\everymath{\displaystyle}
+\renewcommand{\Dif}{\mathop{}\!D}
+\renewcommand{\dif}{\mathop{}\!d}
